@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+
+header{
+    min-height: 150px;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+    width: auto;
+}
+header .container{
+    width: 100%;
+    padding: 50px 0;
+}
+header .container .logo{
+    width: 250px;
+}
+
+
+main{
+    height: calc(100vh - 270px);
+}
+main .container{
+    display: flex;
+}
+main .container .mockup{
+    flex: 1.4;
+    padding-right: 50px;
+}
+main .container .mockup img{
+    width: 100%;
+}
+
+main .container .info{
+    flex: 1;
+    margin-top: 40px;
+}
+main .container .info h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+main .container .info p{
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+main .container .info a{
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+    font-size: 20px;
+    padding: 20px 70px;
+    border-radius: 40px;
+    box-shadow: 4px 4px 7px #333;
+}
+main .container .info a:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+
+footer{
+    height: 100px;
+}
+footer .social{
+    display: flex;
+    justify-content: end;
+}
+footer .social a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    margin-left: 15px;
+}
+footer .social a i{
+    font-size: 23px;
+}
+footer .social a:hover{
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:425px) {
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        width: 100vw;
+    }
+
+    header .container{
+        padding-left: 30px;
+    }
+    header .container .logo{
+        width: 150px;
+    }
+
+
+    main{
+        height: auto;
+    }
+    main .container{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    main .container .mockup{
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    main .container .info{
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    main .container .info h1{
+        font-size: 25px;
+    }
+    main .container .info p{
+        font-size: 16px;
+    }
+    main .container .info a{
+        font-size: 14px;
+        padding: 15px 90px;
+    }
+
+
+    footer{
+        margin-top: 80px;
+        height: 80px;
+    }
+    footer .social{
+        justify-content: center;
+    }
+    footer .social a{
+        height: 35px;
+        width: 35px;
+        border: 1px solid #fff;
+    }
+    footer .social a i{
+        font-size: 15px;
+    }
+
+}

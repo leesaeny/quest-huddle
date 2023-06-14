@@ -17,10 +17,11 @@ header{
     max-width: 1440px;
     margin: auto;
     width: auto;
+    padding: 0 30px;
 }
 header .container{
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 header .container .logo{
     width: 250px;
@@ -32,6 +33,7 @@ main{
 }
 main .container{
     display: flex;
+    padding: 0 30px;
 }
 main .container .mockup{
     flex: 1.4;
@@ -94,16 +96,73 @@ footer .social a:hover{
     color: hsl(300, 69%, 71%);
 }
 
-@media (max-width:425px) {
+@media (min-width:769px) and (max-width:1024px){
+    header .container .info{
+        margin: 0;
+    }
+    main .container .info h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    main .container .info p{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    main .container .info a{
+        font-size: 16px;
+        padding: 10px 70px;
+    }
+
+}
+
+@media (min-width:451px) and (max-width:768px){
+    main{
+        height: auto;
+    }
+    main .container{
+        flex-direction: column;
+    }
+    main .container .mockup{
+        flex: 1.4;
+        padding-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main .container .mockup img{
+        width: 80%;
+    }
+    main .container .info{
+        margin: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+    main .container .info h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    main .container .info p{
+        font-size: 18px;
+        width: 550px;
+        margin: 50px auto;
+    }
+    main .container .info a{
+        font-size: 14px;
+        padding: 10px 70px;
+    }
+    footer{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:450px) {
     body{
         background-image: url(../images/bg-mobile.svg);
         background-size: cover;
         width: 100vw;
     }
 
-    header .container{
-        padding-left: 30px;
-    }
+
     header .container .logo{
         width: 150px;
     }
@@ -114,8 +173,6 @@ footer .social a:hover{
     }
     main .container{
         flex-direction: column;
-        padding-left: 30px;
-        padding-right: 30px;
     }
     main .container .mockup{
         padding: 0;

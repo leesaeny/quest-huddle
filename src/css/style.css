@@ -147,6 +147,8 @@ footer .social a:hover{
         height: 35px;
         width: 35px;
         border: 1px solid #fff;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     footer .social a i{
         font-size: 15px;
